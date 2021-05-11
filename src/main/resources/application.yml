@@ -1,0 +1,16 @@
+spring:
+  h2:
+    datasource:
+      url: jdbc:h2:mem:testdb
+      username: sa
+      password:
+      driverClassName: org.h2.Driver
+      properties:
+        hibernate.temp.use_jdbc_metadata_defaults: false
+        hibernate.id.new_generator_mappings: true
+      hibernate:
+        ddl-auto: none
+  application:
+    name: bankinAccount
+  jackson:
+    serialization.write_dates_as_timestamps: false
